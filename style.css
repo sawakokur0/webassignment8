@@ -376,3 +376,23 @@ body.night-mode .form-select:focus {
 body.night-mode .invalid-feedback {
     color: #ff8a8a; /* A lighter red for dark backgrounds */
 }
+
+/* --- Fix for Autocomplete in Night Mode --- */
+
+/* Контейнер списка в темном режиме */
+body.night-mode .autocomplete-items {
+    background-color: #2c322f; /* Темный фон */
+    border-color: #444;       /* Темная рамка */
+}
+
+/* Каждая отдельная строка в списке */
+body.night-mode .autocomplete-items div {
+    background-color: #2c322f; /* Темный фон для строки */
+    color: var(--celery-cream);  /* Светлый текст */
+    border-bottom-color: #444;  /* Темная линия-разделитель */
+}
+
+/* Строка при наведении мыши */
+body.night-mode .autocomplete-items div:hover {
+    background-color: #3a413d; /* Чуть более светлый темный фон */
+}
