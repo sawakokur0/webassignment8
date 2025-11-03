@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule - Celery Fitness Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="v-progress-container">
+    <div class="v-progress-bar"></div>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Celery</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="schedule.html">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle night mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header text-center">
+      <div class="container">
+        <h1 class="display-4">Class Schedule</h1>
+        <p class="lead">Plan your workouts with our convenient schedule</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <div id="filter-buttons" class="btn-group" role="group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
+              data-filter="all">
+            <label class="btn btn-outline-success" for="btnradio1">All Classes</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" data-filter="yoga">
+            <label class="btn btn-outline-success" for="btnradio2">Yoga</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+              data-filter="pilates">
+            <label class="btn btn-outline-success" for="btnradio3">Pilates</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
+              data-filter="strength">
+            <label class="btn btn-outline-success" for="btnradio4">Strength</label>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover text-center">
+            <thead class="table-dark">
+              <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+              </tr>
+            </thead>
+            <tbody id="schedule-body">
+              <tr data-category="yoga">
+                <td>07:00-08:00</td>
+                <td>Hatha Yoga</td>
+                <td></td>
+                <td>Hatha Yoga</td>
+                <td></td>
+                <td>Hatha Yoga</td>
+                <td>Morning Yoga</td>
+              </tr>
+              <tr data-category="strength">
+                <td>09:00-10:00</td>
+                <td>HIIT</td>
+                <td>Functional</td>
+                <td>HIIT</td>
+                <td>Functional</td>
+                <td>HIIT</td>
+                <td></td>
+              </tr>
+              <tr data-category="pilates">
+                <td>11:00-12:00</td>
+                <td>Mat Pilates</td>
+                <td></td>
+                <td>Mat Pilates</td>
+                <td></td>
+                <td>Mat Pilates</td>
+                <td>Pilates Stretch</td>
+              </tr>
+              <tr data-category="strength">
+                <td>17:00-18:00</td>
+                <td>Strength</td>
+                <td>Core</td>
+                <td>Strength</td>
+                <td>Core</td>
+                <td>Strength</td>
+                <td></td>
+              </tr>
+              <tr data-category="yoga">
+                <td>18:30-19:30</td>
+                <td>Vinyasa Flow</td>
+                <td>Yin Yoga</td>
+                <td>Vinyasa Flow</td>
+                <td>Yin Yoga</td>
+                <td>Vinyasa Flow</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="notification-container"></div>
+  <footer class="text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2023 Celery Fitness Studio. All rights reserved.</p>
+      <p class="mb-0">Made by: Tagishev Aldiyar, Sergazina Amina</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
