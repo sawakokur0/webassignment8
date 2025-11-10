@@ -32,30 +32,39 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="schedule.html">Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="trainers.html">Trainers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle night mode">
-            <i class="fas fa-moon"></i>
-          </button>
-        </div>
+        
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="trainers.html">Trainers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <li class="nav-item" id="nav-login"><a class="nav-link" href="login.html">Log In</a></li>
+          <li class="nav-item" id="nav-signup"><a class="nav-link" href="signup.html">Sign Up</a></li>
+          <li class="nav-item d-none" id="nav-profile"><a class="nav-link" href="profile.html">Profile</a></li>
+          <li class="nav-item d-none" id="nav-logout"><a class="nav-link" href="#" style="cursor: pointer;">Log Out</a></li>
+        </ul>
+        
+        <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle night mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
       </div>
     </nav>
   </header>
@@ -99,6 +108,24 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="quote-of-the-day" class="py-5">
+    <div class="container">
+    <h2 class="section-title text-center">Advice of the Day</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <figure class="text-center">
+          <blockquote class="blockquote" idD="fitness-quote">
+            <p>Loading fitness quote...</p>
+          </blockquote>
+          <figcaption class="blockquote-footer" id="fitness-author">
+            ...
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    </div>
     </section>
 
     <section id="testimonials" class="py-5 bg-light-cream">
@@ -210,6 +237,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="script.js" defer></script>
+  <script src="auth.js" defer></script>
 </body>
 
 </html>
