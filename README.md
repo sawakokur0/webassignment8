@@ -48,7 +48,7 @@ This project includes all features required for the Final Project.
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 * HTML5 (Semantic Markup)
 * CSS3
