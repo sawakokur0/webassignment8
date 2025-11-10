@@ -2,13 +2,13 @@
 
 This is the repository for the final web development project. The project is a multi-page, fully responsive website for a fictional fitness studio called "Celery."
 
-## 🚀 Live Demo Link
+##  Live Demo Link
 
 [https://sawakokur0.github.io/webassignment8/](url)
 
 ---
 
-## 📋 Implemented Features
+##  Implemented Features
 
 This project includes all features required for the Final Project.
 
@@ -48,7 +48,7 @@ This project includes all features required for the Final Project.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 * HTML5 (Semantic Markup)
 * CSS3
